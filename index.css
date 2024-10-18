@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Franklin";
+  overflow: hidden;
+}
+
+.main-ctn {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 90vh;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.logo-ctn {
+  margin-bottom: 2em;
+}
+
+.text-ctn {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.text-ctn h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+
+.text-ctn h3 span {
+  font-weight: 700;
+  color: black;
+}
+
+.text-ctn img {
+  width: 100%;
+}
+
+.input-ctn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.email-ctn {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 80%;
+}
+
+.email-input {
+  padding: 1em 2em;
+  border-radius: 2em;
+  border: 1px solid hsl(223, 100%, 88%);
+  color: hsl(223, 100%, 88%);
+  transition: border-color 0.3s ease;
+}
+
+.email-input.focus {
+  border-color: hsl(223, 87%, 63%);
+}
+
+.email-input.error {
+  border-color: red;
+}
+
+.email-input::placeholder {
+  color: hsl(223, 100%, 88%);
+}
+
+.email-notify-btn {
+  padding: 1em;
+  border-radius: 2em;
+  background-color: hsl(223, 87%, 63%);
+  border: none;
+  color: white;
+  width: 100%;
+  box-shadow: 0px 8px 15px 2px rgba(79, 125, 243, 0.19);
+}
+
+.dashboard-img {
+  margin-top: 2em;
+  width: 80%;
+  align-self: center;
+}
+
+.fa-brands {
+  color: hsl(223, 87%, 63%);
+}
+
+.social-ctn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1em;
+}
+
+.social-ctn p {
+  font-size: 14px;
+  color: hsl(0, 0%, 59%);
+}
+
+.socials-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1em;
+}
+
+.socials-icons .fa-brands {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid hsl(0, 0%, 79%);
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.error-message {
+  font-size: 12px;
+  font-style: italic;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    overflow: visible;
+  }
+
+  .logo-ctn {
+    margin: 0;
+  }
+
+  .text-ctn h3 {
+    font-size: 2em;
+  }
+
+  .dashboard-img {
+    max-width: 500px;
+  }
+
+  .email-ctn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .email-ctn .input-ctn {
+    width: 100%;
+  }
+
+  .email-ctn .email-notify-btn {
+    width: 40%;
+  }
+}
